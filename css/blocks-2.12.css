@@ -3314,12 +3314,45 @@ img:not([src]) {
     .t720 .t-form__errorbox-bottom {
         display: none;
     }
+	
+	.row-contact .t-item {
+		width:50%;
+	}
 }
+
+@media screen and (max-width: 480px) {
+	.row-contact .t-item {
+		width:100%;
+	}
+}
+
+
 .t795__title {
     margin-bottom: 40px;
 }
 .t795__descr {
     max-width: 560px;
+}
+
+.row-contact {
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.row-contact .t-item {
+	display:flex;	
+}
+
+.btn-contact {
+	display: block;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 20px 0;
+	width:100%;
+}
+
+.btn-contact:hover {
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 
 #footer {
